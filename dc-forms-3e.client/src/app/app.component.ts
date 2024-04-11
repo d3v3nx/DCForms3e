@@ -3,7 +3,7 @@ import { Field } from './components/dynamic-form/dynamic-fields/models/field.mod
 import { BehaviorSubject, map } from 'rxjs';
 import { JsonReaderService } from './services/json-reader.service';
 import { HttpClient } from '@angular/common/http';
-import { FormDataService } from '../../FormData.service';
+import { FormDataService } from './services/FormData.service';
 
 @Component({
   selector: 'app-root',
