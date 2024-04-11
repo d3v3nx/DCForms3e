@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "label": "Name",
+      "type": "string"
+    },
+    {
+      "label": "Age",
+      "type": "number"
+    },
+    {
+      "label": "Gender",
+      "type": "string"
+    },
+    {
+      "label": "HAEMOGLOBIN",
+      "type": "string"
+    },
+    {
+      "label": "RED BLOOD CELLS",
+      "type": "string"
+    },   
+    {
+      "label": "PACKED CELL VOLUME",
+      "type": "string"
+    }       
+  ]
+}
