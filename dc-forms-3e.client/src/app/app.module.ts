@@ -30,11 +30,13 @@ import { MaterialModule } from './shared/material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
 
 const appRoutes : Routes = [
   {path:'',component:HomePageComponent},
-  // {path:'user/login',component:UserLoginComponent},
-  // {path:'user/register',component:UserRegisterComponent},
+  {path:'user/login',component:UserLoginComponent},
+  {path:'user/register',component:UserRegisterComponent},
   {path:'**',component:HomePageComponent}
 ]
 
@@ -51,6 +53,8 @@ const appRoutes : Routes = [
     DynamicFieldDatepickerComponent,
     DynamicFieldNumberComponent,
     NavBarComponent,
+    UserLoginComponent,
+    UserRegisterComponent,
   ],
   imports: [
     BrowserModule,
