@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\dc-forms-3e.Server.props" />
+</Project>

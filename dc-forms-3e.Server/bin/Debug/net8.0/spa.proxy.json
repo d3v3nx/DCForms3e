@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "D:\\@BVM\\Sem8_code\\4CP33_code\\dc-forms-3e\\dc-forms-3e.Server\\..\\dc-forms-3e.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

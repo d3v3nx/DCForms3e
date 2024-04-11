@@ -1,6 +1,6 @@
 @dc_forms_3e.Server_HostAddress = http://localhost:5196
 
-GET {{dc_forms_3e.Server_HostAddress}}/weatherforecast/
+GET {{dc_forms_3e.Server_HostAddress}}/FormData/
 Accept: application/json
 
 ###

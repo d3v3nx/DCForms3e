@@ -4,13 +4,24 @@
       "label": "Name",
       "type": "string"
     },
+    
+    {
+      "label": "Gender",
+      "type": "radio",
+      "options": [
+        {
+          "value": "female",
+          "viewValue": "Female"
+        },
+        {
+          "value": "male",
+          "viewValue": "Male"
+        }
+      ]
+    },
     {
       "label": "Age",
       "type": "number"
-    },
-    {
-      "label": "Gender",
-      "type": "string"
     },
     {
       "label": "HAEMOGLOBIN",
@@ -23,6 +34,6 @@
     {
       "label": "PACKED CELL VOLUME",
       "type": "string"
-    }       
+    }
   ]
 }

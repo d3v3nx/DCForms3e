@@ -1,17 +1,25 @@
 <!-- <app-toolbar></app-toolbar> -->
 <app-nav-bar></app-nav-bar>
 <div class="container" style="margin-top: 70px;">
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
+  <!-- <app-user-register></app-user-register> -->
   <div class="row mb-4">
     <div class="col-4">
-        <div class="card">
-          List of all patients
+      <div class="card">
+        List of all patients
+        <div *ngIf="formData">
+          <ul>
+            <li *ngFor="let item of formData" (click)="selectPatient(item)">
+              <p>{{ item.P_Name }}</p>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="col-8">
-        <div class="card">
-          <app-dynamic-form [fieldset$]="fieldset$"></app-dynamic-form>
-        </div>
+      <div class="card">
+        <app-dynamic-form [fieldset$]="fieldset$"></app-dynamic-form>
+      </div>
     </div>
-</div>
+  </div>
 </div>

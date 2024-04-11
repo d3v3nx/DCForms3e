@@ -1,7 +1,7 @@
 const PROXY_CONFIG = [
   {
     context: [
-      "/weatherforecast",
+      "/FormData",
     ],
     target: "https://localhost:7223",
     secure: false

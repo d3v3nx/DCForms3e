@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Field } from './components/dynamic-form/dynamic-fields/models/field.model';
 import { BehaviorSubject, map } from 'rxjs';
 import { JsonReaderService } from './services/json-reader.service';
+import { HttpClient } from '@angular/common/http';
+import { FormDataService } from '../../FormData.service';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +13,21 @@ import { JsonReaderService } from './services/json-reader.service';
 export class AppComponent {
   title = 'dynamic-form';
   fieldset: Field[] = [];
+  formData: any[]=[];
 
   private fieldsetSubject = new BehaviorSubject<Field[]>([]);
+
+  selectedPatient: any;
+
   fieldset$ = this.fieldsetSubject.asObservable();
 
-  constructor(private jsonReaderService: JsonReaderService) {}
+  constructor(private jsonReaderService: JsonReaderService, private http: HttpClient,private formDataService: FormDataService) {}
+
+
+  selectPatient(patient: any) {
+    this.selectedPatient = patient;
+    console.log(this.selectedPatient)
+  }
 
   ngOnInit(): void {
     this.jsonReaderService
@@ -36,5 +48,14 @@ export class AppComponent {
       .subscribe((response) => {
         this.fieldsetSubject.next(response);
       });
+      /////////////////////////////////////////////
+      this.formDataService.getData().subscribe(
+        data => {
+          this.formData = data;
+        },
+        error => {
+          console.error('Error fetching data:', error);
+        }
+      );
   }
 }
