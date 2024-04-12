@@ -31,7 +31,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.jsonReaderService
-      .read('/assets/form.json')
+      .read('/assets/form1.json')
       .pipe(
         map((response) => {
           return response.fields.map((fieldResponse: any) => {

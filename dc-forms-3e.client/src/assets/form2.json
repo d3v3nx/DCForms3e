@@ -1,0 +1,56 @@
+{
+    "fields": [
+      {
+        "label": "Name",
+        "type": "string"
+      },
+      
+      {
+        "label": "Gender",
+        "type": "radio",
+        "options": [
+          {
+            "value": "female",
+            "viewValue": "Female"
+          },
+          {
+            "value": "male",
+            "viewValue": "Male"
+          }
+        ]
+      },
+      {
+        "label": "Age",
+        "type": "number"
+      },
+      {
+        "label": "PLATELETS",
+        "type": "string"
+      },
+      {
+        "label": "NEUTROPHILS",
+        "type": "string"
+      },   
+      {
+        "label": "LYMPHOCYTES",
+        "type": "string"
+      },
+      {
+        "label": "EOSINOPHILS",
+        "type": "string"
+      },
+      {
+        "label": "MONOCYTES",
+        "type": "string"
+      },
+      {
+        "label": "BASOPHILS",
+        "type": "string"
+      },
+      {
+        "label": "BANDCELLS",
+        "type": "string"
+      }
+    ]
+  }
+  

@@ -1,3 +1,6 @@
 .card{
   height: 100%;
 }
+.list-group-item{
+  height: 35px;
+}
