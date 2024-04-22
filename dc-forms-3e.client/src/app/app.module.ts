@@ -55,6 +55,7 @@ const appRoutes : Routes = [
     NavBarComponent,
     UserLoginComponent,
     UserRegisterComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,30 +4,4 @@
   <router-outlet></router-outlet>
   <!-- <app-user-register></app-user-register> -->
   <!-- <app-user-login></app-user-login> -->
-  <div class="row mb-4">
-    <div class="col-4">
-      <div class="card">
-        <div class="card-header bg-primary text-bg-secondary">
-          <h2>
-            List of all patients
-          </h2>
-        </div>
-        <div *ngIf="formData">
-          <ul class="list-group">
-            <li class="list-group-item text-center" *ngFor="let item of formData" (click)="selectPatient(item)">
-              {{ item.P_Name }}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-8">
-      <div class="card">
-        <div class="card-header bg-primary text-bg-secondary">
-          <h2>Form 2</h2>
-        </div>
-        <app-dynamic-form [fieldset$]="fieldset$"></app-dynamic-form>
-      </div>
-    </div>
-  </div>
 </div>
