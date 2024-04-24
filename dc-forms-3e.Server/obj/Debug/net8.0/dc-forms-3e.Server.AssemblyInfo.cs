@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dc-forms-3e.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214d4cf6869b0567a8beacbdeaad1091a4fd5d4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93cfccd9f0f3b1eafdeec70498ce4a296cd55fe0")]
 [assembly: System.Reflection.AssemblyProductAttribute("dc-forms-3e.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dc-forms-3e.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

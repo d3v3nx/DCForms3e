@@ -1,0 +1,61 @@
+{
+    "fields": [
+      {
+        "label": "Hemo",
+        "type": "string"
+      },
+      {
+        "label": "Lastname",
+        "type": "string"
+      },
+      {
+        "label": "Petname",
+        "type": "string"
+      },
+      {
+        "label": "Age",
+        "type": "number"
+      },
+      {
+        "label": "Gender",
+        "type": "radio",
+        "options": [
+          {
+            "value": "female",
+            "viewValue": "Female"
+          },
+          {
+            "value": "male",
+            "viewValue": "Male"
+          }
+        ]
+      },
+      {
+        "label": "Country",
+        "type": "select",
+        "options": [
+          {
+            "value": "india",
+            "viewValue": "India"
+          },
+          {
+            "value": "usa",
+            "viewValue": "USA"
+          },
+          {
+            "value": "china",
+            "viewValue": "China"
+          }
+        ]
+      },
+      {
+        "label": "Date of birth",
+        "type": "datepicker"
+      },
+      {
+        "label": "Agree to terms and conditions",
+        "type": "checkbox"
+      }
+    ]
+  }
+  
